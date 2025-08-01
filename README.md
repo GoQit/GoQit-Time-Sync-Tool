@@ -1,8 +1,8 @@
-# GoQit Time Sync Tool for Windows
+# GoQit One Time Sync Tool
 
-A simple, forceful, and elegant batch script to fix common Windows time synchronization issues and set the correct time from reliable NTP servers.
+A simple, forceful, and elegant batch script created by **GoQit One** to fix common Windows time synchronization issues and set the correct time from reliable NTP servers.
 
-![Screenshot](https://i.imgur.com/3a7582.jpg)
+![Screenshot](https://github.com/user-attachments/assets/03b3b298-b86f-4025-98a7-34b606d8ecf3)
 
 ---
 
@@ -14,21 +14,22 @@ A simple, forceful, and elegant batch script to fix common Windows time synchron
 - **Clean UI**: Presents all messages in a clean, centered, and professional-looking interface.
 - **Customizable Timezone**: Easily configurable to any timezone by editing one variable.
 
+## Author
+- This tool is created by **Parth**.
+- **Brand:** GoQit One
+- **Website:** **[https://goqit.netlify.app/](https://goqit.netlify.app/)**
+
 ## System Requirements
 This script is designed to work on **Windows Vista and all newer versions**, including:
-- Windows 7
-- Windows 8 / 8.1
-- Windows 10
-- Windows 11
-- Corresponding Windows Server versions (2008 and newer)
+- Windows 7, 8, 8.1, 10, 11
+- Windows Server versions (2008 and newer)
 
 It will **not** work on Windows XP or older versions.
 
 ## How to Use
 1.  Download the `GoQit_TimeSync.bat` file from this repository.
-2.  Right-click the file.
-3.  Select **"Run as administrator"**.
-4.  The script will handle the rest!
+2.  Right-click the file and select **"Run as administrator"**.
+3.  The script will handle the rest!
 
 ## Configuration: How to Change the Timezone
 
@@ -72,4 +73,7 @@ That's it! Now, when you run the script, it will use the new timezone you have s
 ---
 
 ## Contributing
-If you find a bug or have a suggestion for a new feature, please feel free to [open an issue](https://github.com/[YOUR_USERNAME]/[YOUR_REPOSITORY]/issues).
+If you find a bug or have a suggestion, please feel free to [open an issue](https://github.com/GoQit/GoQit-Time-Sync-Tool/issues).
+
+---
+*&copy; 2025 GoQit One*

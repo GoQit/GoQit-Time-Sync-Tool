@@ -3,13 +3,13 @@
 :: GoQit One Time Sync Tool
 :: Author: Parth (GoQit One)
 :: Website: https://goqit.netlify.app/
-:: Version: 1.0 (GitHub Release)
+:: Version: 1.1 (GitHub Release)
 :: License: MIT
 :: Compatible with: Windows Vista, 7, 8, 10, 11 and newer.
 :: =================================================================
 
 :: Sets the title of the command prompt window.
-title GoQit One Time Sync Tool
+title GoQit Time Sync Tool
 
 :: Sets the console color to Green text on a Black background.
 color 0A
@@ -69,7 +69,7 @@ if %errorlevel% EQU 0 ( goto :sync_process ) else ( goto :internet_error )
 cls & echo. & echo.
 echo %p% +---------------------------------------------------------+
 echo %p% ^|                                                         ^|
-echo %p% ^|  Now syncing time for "%TIMEZONE%"...   ^|
+echo %p% ^|  Now syncing time for "%TIMEZONE%"...          ^|
 echo %p% ^|  Please wait a moment.                                  ^|
 echo %p% ^|                                                         ^|
 echo %p% +---------------------------------------------------------+
@@ -85,19 +85,21 @@ w32tm /resync /force >nul
 
 
 :: 3. Final Confirmation
-echo.
+cls & echo.
 echo %p% +---------------------------------------------------------+
 echo %p% ^|                                                         ^|
 echo %p% ^|  [+] Your time has been updated successfully!           ^|
 echo %p% ^|                                                         ^|
 echo %p% +---------------------------------------------------------+
-goto :exit_prompt
+echo.
+
+timeout /t 5
+exit /b
 
 
 :: 4. Common Exit Prompt
 :exit_prompt
 echo. & echo.
-echo %p% -------------------------------------------------
-echo %p%           Press any key to exit...
+echo %p% Press any key to exit...
 pause >nul
 exit /b

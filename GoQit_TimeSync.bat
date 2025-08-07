@@ -92,7 +92,7 @@ echo %p% ^|  [+] Your time has been updated successfully!           ^|
 echo %p% ^|                                                         ^|
 echo %p% +---------------------------------------------------------+
 echo.
-
+echo.
 timeout /t 5
 exit /b
 
